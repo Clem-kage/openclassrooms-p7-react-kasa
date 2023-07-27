@@ -1,0 +1,29 @@
+.visuel{
+    width: 80vw;
+    height: 25vh;
+    /* border: solid 2px black; */
+    border-radius: 10px;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgba(50, 49, 49, 0.6), rgba(48, 47, 47, 0.3)), url('./../img/about-image.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    /* min-width: 370px; */
+}
+
+ #about {
+    width: 70%;
+    margin: 0 auto;
+}
+
+main .display{
+    margin-top: 2vh;
+}
+@media (max-width: 800px){
+    #about{
+        width: 75vw;
+    }
+}

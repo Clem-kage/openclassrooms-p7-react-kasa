@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+footer div{
+    text-align: center;
+    margin: 100px auto;
+}
+
+
+@media (max-width: 800px){
+    footer {
+            align-items: center;
+    }
+}
+
+

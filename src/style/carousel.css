@@ -1,0 +1,84 @@
+
+.container-carousel{
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.carousel{
+    height: 100%;
+    width: 100%;
+    /* border: solid black 1px; */
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+.white{
+    background-color: antiquewhite;
+}
+
+.leftBtn, .rightBtn{
+    /* border: solid black 1px; */
+    padding: 10px;
+    /* width: 100px; */
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+.leftBtn{
+    top: 40%;
+    left: 0px;
+}
+.rightBtn{
+    top: 40%;
+    right: 0px;
+}
+.leftBtn svg, .rightBtn svg{
+   height: 40px;
+}
+
+.activeSlider{
+    animation: apparition .5s ease-in-out;
+}
+.desactiveSlider{
+    animation: apparitionPrevious .5s ease-in-out;
+}
+
+@keyframes apparition {
+    from{
+       /* transform:translateX(-100%); */
+       /* opacity: 0; */
+    }
+    to{
+        opacity: 1;
+        transform:translateX(-100%);
+
+    }
+}
+@keyframes apparitionPrevious {
+    from{
+       transform:translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0%);
+
+    }
+}
+.sliderNbr{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+/* {
+    border: solid black 1px;
+    padding: 10px;
+    background-color: red;
+
+} */

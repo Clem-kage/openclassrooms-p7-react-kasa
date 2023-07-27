@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+#accom {
+    margin: 0 auto;
+}
+
+.meta{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* border: solid 1px black; */
+    justify-content: space-between
+}
+.left{
+    width: 60%;
+    /* border: solid 1px black; */
+
+}
+#accom h2, #accom .left p:nth-child(2){
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    padding:0;
+}
+#accom h2{
+    font-size: 1.7rem;
+    margin: 10px 0 0 0;
+
+}
+#accom .left p{
+    margin: 0
+}
+.tagContainer{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right{
+    width: 40%;
+    /* border: solid 1px black; */
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profil{
+    display: flex;
+    justify-content: flex-end;
+    /* border: solid 1px black; */
+    /* width: 120px; */
+    /* margin-left: 64%; */
+    align-items: center;
+    color:#FF6060;
+    font-size: 1.2rem;
+}
+
+.profil .image{
+    /* border: solid 1px black; */
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+}
+.rating{
+    /* margin-left: 60%; */
+    /* border: solid black 1px; */
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    
+
+}
+.rating svg{
+    margin-left: 5px;
+    height: 18px;
+}
+
+.metaText{
+    /* border: solid 1px black; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.descContainer, .equipContainer{
+    width: 45%;
+    padding: 0 1%;
+
+    /* border: solid 5px red; */
+}
+
+
+
+@media (max-width: 800px){
+    .meta, .metaText{
+       flex-direction: column;
+    }
+    .left, .right{
+        width: 100%;
+
+    }
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .rating, .profil{
+        margin-left: 0px;
+    }
+    .descContainer, .equipContainer{
+        width: 100%
+    }
+}

@@ -1,0 +1,15 @@
+.tag{
+    padding: 2px 25px;
+    /* border: solid black 1px; */
+    border-radius: 20px;
+    text-align: center;
+    /* vertical-align: baseline; */
+    background-color: #FF6060;
+    color: white;
+    margin-left: 10px;
+    font-size: .8rem;
+}
+.tag:first-child{
+    margin-left: 0px;
+
+}

@@ -1,0 +1,28 @@
+.item-log{
+    height: 300px;
+    width: 30%;
+    border-radius: 10px;
+    /* border: solid black 1px; */
+    background-color: #FF6060;
+    background: linear-gradient(180deg, #FF6060 0%, rgba(138, 2, 2, 0.5) 100%); 
+    cursor: pointer;
+    margin-top: 50px;
+    /* min-width: 250px; */
+}
+
+.item-log h3{
+    padding-top: 200px;
+    color: white;
+    padding:150px 50% 0px 5%;    
+}
+.item-log  a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    .item-log{
+    width: 100%;
+    margin-top: 2vh;
+    /* min-width: 370px; */
+    }
+}
