@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 #home {
  margin: 0 auto;
 }
  .visuelHome{
-    width: 80vw;
-    height: 25vh;
+    width: 85%;
+    height: 30vh;
     /* border: solid 2px black; */
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 5vh auto;
     display: flex;
     justify-content: center;
@@ -15,29 +16,41 @@
     background-size: cover;
     color: white;
 }
+.visuelHome h2{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 .home-container{
-    width: 80vw;
+    width: 85%;
      /* border: solid 2px black; */
    padding: 0 30px 30px 30px;
    box-sizing: border-box;
-   border-radius: 10px;
-   margin: 0 auto;
+   border-radius: 25px;
+   margin: 45px auto 0;
    background-color: #F6F6F6;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-
 }
-@media (max-width: 600px){
+@media (max-width: 750px){
     .home-container{
         width: 90%;
         background-color: white;
         padding: 0;
+        margin: 0 auto;
     }
     .visuelHome{
         width: 90%;
         margin: 0 auto;
-        height: 20vh;
+        height: 10vh;
+        border-radius: 10px;
+        padding: 1rem;
+        box-sizing: border-box;
     }
+    .visuelHome h2{
+       font-size: 1.5rem
+    }
+
 }

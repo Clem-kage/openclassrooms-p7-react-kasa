@@ -1,7 +1,7 @@
 
 .container-carousel{
-    height: 40vh;
-    width: 80%;
+    height: 60vh;
+    width: 85%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -12,7 +12,6 @@
 .carousel{
     height: 100%;
     width: 100%;
-    /* border: solid black 1px; */
     margin: 0 auto;
     background-position: center;
     background-size: cover;
@@ -30,15 +29,15 @@
     cursor: pointer;
 }
 .leftBtn{
-    top: 40%;
-    left: 0px;
+    top: 35%;
+    left: 10px;
 }
 .rightBtn{
-    top: 40%;
-    right: 0px;
+    top: 35%;
+    right: 10px;
 }
 .leftBtn svg, .rightBtn svg{
-   height: 40px;
+   height: 100px;
 }
 
 .activeSlider{
@@ -46,6 +45,9 @@
 }
 .desactiveSlider{
     animation: apparitionPrevious .5s ease-in-out;
+}
+.slideNbr{
+    font-size: 1.2rem;
 }
 
 @keyframes apparition {
@@ -74,6 +76,31 @@
     position: absolute;
     bottom: 20px;
     left: 50%;
+}
+
+@media (max-width: 800px){
+    
+    .container-carousel{
+        height: 300px;
+        border-radius: 10px;
+    }
+    .leftBtn svg, .rightBtn svg{
+         height: 20px
+    }
+    .leftBtn{
+        top: 45%;
+        left: 0px;
+        padding: 0;
+    }
+    .rightBtn{
+        top: 45%;
+        right: 0px;
+        padding: 0;
+    }
+    .slideNbr{
+        display: none
+    }
+
 }
 
 /* {

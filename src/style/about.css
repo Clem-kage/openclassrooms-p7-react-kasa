@@ -1,8 +1,8 @@
 .visuel{
-    width: 80vw;
-    height: 25vh;
+    width: 85%;
+    height: 30vh;
     /* border: solid 2px black; */
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 5vh auto;
     display: flex;
     justify-content: center;
@@ -11,7 +11,6 @@
     background-position: center;
     background-size: cover;
     color: white;
-    /* min-width: 370px; */
 }
 
  #about {
@@ -20,10 +19,31 @@
 }
 
 main .display{
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 @media (max-width: 800px){
-    #about{
-        width: 75vw;
+    .visuel{
+        height:300px;
+        margin: 1vh auto;
+        border-radius: 10px;
     }
+    #about{
+        width: 85%;
+    }
+    #about .display .container{
+        padding-bottom: 50px;
+    }
+    #about .display .content {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    #about .display{
+        margin-top: 2vh;
+    }
+    #about .display .clicker{
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
 }

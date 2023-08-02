@@ -120,7 +120,7 @@ const Carousel = (props) => {
       )}
       {useAble && (
         <div className="sliderNbr">
-          <p>
+          <p className="slideNbr">
             {" "}
             {index + 1}/{props.data.length}
           </p>

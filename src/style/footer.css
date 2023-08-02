@@ -15,7 +15,18 @@ footer div{
 @media (max-width: 800px){
     footer {
             align-items: center;
+            margin-top: 5vh;
+            height: 20vh;
+            font-size: .8rem;
+            justify-content: center;
     }
+    footer div{
+        margin: 0 auto;
+    }
+    footer svg{
+        height: 35px;
+    }
+    
 }
 
 

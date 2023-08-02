@@ -58,17 +58,24 @@ const DisplayComponent = (props) => {
           </div>
         )}
       </div>
-      <div className="container">
         {showDisplay && arrayProp ? (
+      <div className="container">
+          <div className="content">
           <ul>
             {props.data.text.map((element, index) => (
               <li key={index}> {element} </li>
             ))}
           </ul>
+          </div>
+          </div>
         ) : (
-          showDisplay && <div className="content">{props.data.text}</div>
-        )}
+          showDisplay && 
+          <div className="container">
+          <div className="content">
+            {props.data.text}
+            </div>
       </div>
+        )}
     </div>
   );
 };
